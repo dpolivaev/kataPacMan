@@ -2,18 +2,18 @@ package pacman;
 
 public class PacmanGame {
 
+    private Coordinate pacmanPosition;
+
     public PacmanGame(Dimension dimension, Coordinate initialPosition, Direction direction) {
-        // TODO Auto-generated constructor stub
+        this.pacmanPosition = initialPosition;
     }
 
     public void movePacman() {
-        // TODO Auto-generated method stub
 
     }
 
     public Coordinate getPacmanPosition() {
-        // TODO Auto-generated method stub
-        return null;
+        return pacmanPosition;
     }
 
 }

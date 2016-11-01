@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import com.tngtech.jgiven.junit.SimpleScenarioTest;
 
-public class PacmanGame0Test extends SimpleScenarioTest<PacmanStage> {
+public class PacmanGameFeature0Test extends SimpleScenarioTest<PacmanStage> {
     @Test
     public void pacman_does_not_move_when_at_the_wall() throws Exception {
         given().a_board_with_size(1, 1)
