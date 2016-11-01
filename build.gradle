@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.tngtech.jgiven:jgiven-junit:0.12.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
+
+task jgivenReport(type: JavaExec) {
+    main = 'com.tngtech.jgiven.report.ReportGenerator'
+    args '--targetDir=build/jgiven-reports/html',
+            '--format=html'
+    classpath = configurations.testCompile
+}
