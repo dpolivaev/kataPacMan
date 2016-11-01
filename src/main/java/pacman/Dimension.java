@@ -11,4 +11,8 @@ public class Dimension {
         this.height = height;
     }
 
+    boolean isContained(Coordinate c) {
+        return c.y >= 0 && c.y < height;
+    }
+
 }

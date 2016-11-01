@@ -52,4 +52,15 @@ public class PacmanStage extends Stage<PacmanStage> {
         return self();
     }
 
+    public PacmanStage pacman_has_eaten_$_dots(int numberOfEatenDots) {
+        assertThat(pacmanGame.getEatenDots()).isEqualTo(numberOfEatenDots);
+        return self();
+    }
+
+    public void pacman_moves_$_times(int n) {
+        for (int i = 0; i < n; i++) {
+            pacman_moves();
+        }
+    }
+
 }
