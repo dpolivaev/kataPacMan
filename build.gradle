@@ -9,6 +9,7 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'com.tngtech.jgiven:jgiven-junit:0.12.1'
+    testCompile 'org.slf4j:slf4j-simple:1.7.21'
 }
 
 task wrapper(type: Wrapper) {
