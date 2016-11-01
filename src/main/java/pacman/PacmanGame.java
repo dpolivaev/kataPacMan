@@ -16,4 +16,8 @@ public class PacmanGame {
         return pacmanPosition;
     }
 
+    public Direction getPacmanDirection() {
+        return Direction.DOWN;
+    }
+
 }

@@ -12,7 +12,7 @@ public class PacmanGameFeature0Test extends SimpleScenarioTest<PacmanStage> {
 
         when().pacman_moves();
 
-        then().pacman_is_at_position(0, 0);
+        then().pacman_is_at_position(0, 0).and().is_looking(Direction.DOWN);
 
     }
 }

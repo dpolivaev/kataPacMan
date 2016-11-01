@@ -1,5 +1,5 @@
 package pacman;
 
 enum Direction {
-    UP;
+    UP, DOWN;
 }

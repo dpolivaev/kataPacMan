@@ -47,4 +47,9 @@ public class PacmanStage extends Stage<PacmanStage> {
         return self();
     }
 
+    public PacmanStage is_looking(Direction direction) {
+        assertThat(pacmanGame.getPacmanDirection()).isEqualTo(direction);
+        return self();
+    }
+
 }
